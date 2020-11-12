@@ -1,0 +1,52 @@
+{
+  "name": "graphql-test",
+  "version": "0.0.1",
+  "description": "Test task",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node ./index.ts",
+    "start:dev": "ts-node-dev --respawn --ignore-watch node_modules -T -- ./index.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeyTolmachev/graphql-test.git"
+  },
+  "author": "SergeyTolmachev",
+  "license": "ISC",
+  "homepage": "https://github.com/SergeyTolmachev/graphql-test#readme",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "apollo-server": "^2.19.0",
+    "class-validator": "^0.12.2",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "graphql": "^15.4.0",
+    "mysql2": "^2.2.5",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^9.0.0",
+    "type-graphql": "^1.1.1",
+    "typedi": "^0.8.0",
+    "typeorm": "^0.2.29",
+    "typescript": "^4.0.5"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "ts-node-dev": "^1.0.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "./",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      ".+\\.(t|j)s$": "ts-jest"
+    },
+    "testEnvironment": "node"
+  }
+}
